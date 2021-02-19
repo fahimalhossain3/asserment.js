@@ -58,3 +58,22 @@ console.log(totalHotelCost);
 
 
 
+function megaFriend(friendsName) {
+    var longestName = '';
+    for (var i = 0; i < friendsName.length; i++) {
+        if (longestName.length < friendsName[i].length) {
+            longestName = friendsName[i];
+        }
+    }
+    return longestName;
+}
+
+// Friends Name
+var getMegaFriend = megaFriend([
+    ' Fami ',
+    'Fhmi golanfda',
+    'Fahim al hossain',
+]);
+
+// Console Output
+console.log(getMegaFriend); 
